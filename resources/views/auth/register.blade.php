@@ -54,7 +54,7 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="check" id="check" {{ old('remember') ? 'checked' : '' }} required >
                                     <label class="form-check-label" for="remember">
-                                        {{ __('Обработку персональных данных') }}
+                                        <a class="text-decoration-none text-link" href="{{route('Treatment')}}">Обработку персональных данных</a>
                                     </label>
                                 </div>
                             </div>

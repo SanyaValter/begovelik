@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Product;
+use App\Models\news;
 class MainController extends Controller
 {
     public function main() {
@@ -19,8 +20,12 @@ class MainController extends Controller
     public function Photos() {
         return view('Photos');
     }
-
-
+    public function Application() {
+        return view('Application');
+    }
+    public function Treatment() {
+        return view('Treatment');
+    }
     public function search(Request $request) {
         $data = $request->validate([
             'search' => ['required', 'string', 'min:3']

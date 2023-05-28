@@ -23,10 +23,10 @@
           <div class="col">
             <div class="card card-cover  overflow-hidden alight-items-center rounded-4 shadow-lg">
               <div class="d-flex justify-content-center w-100 align-items-center py-2">
-                <!-- <a href="{{ request()->fullUrlWithQuery(['category' => 'Free']) }}"><img style="max-width: 150px; max-height:  150px;" class="card-img-top" src="{{asset('img/1234.png')}}" alt="Бесплатные занятия"></a> -->
+                <!-- <a href="{{ request()->fullUrlWithQuery(['category' => 'Free']) }}"><img style="max-width: 150px; max-height:  150px;" class="card-img-top" src="{{asset('img/1234.png')}}" alt="Пробное занятия"></a> -->
                 </div>
               <div class="d-flex flex-column h-100 pb-3 text-white text-shadow-1">
-                <h2 class="display-6 lh-1 fw-bold text-dark text-center">  <a class="text-center text-dark text-decoration-none fs-2" href="{{ request()->fullUrlWithQuery(['category' => 'Free']) }}">Бесплатные занятия</a>
+                <h2 class="display-6 lh-1 fw-bold text-dark text-center">  <a class="text-center text-dark text-decoration-none fs-2" href="{{ request()->fullUrlWithQuery(['category' => 'trial']) }}">Пробное занятия</a>
               </div>
             </div>
           </div>

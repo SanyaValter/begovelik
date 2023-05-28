@@ -38,9 +38,6 @@
               <p class="mb-1">
                 <span class="text-muted me-2 fs-3">Описание:</span><span class="fs-4">{{$product->text}}</span>
               </p>
-              <p>
-                <span class="text-muted me-2 fs-3">Количество:</span><span class="fs-4">{{$product->count}}</span>
-              </p>
             </div>
           </div>
           <hr>

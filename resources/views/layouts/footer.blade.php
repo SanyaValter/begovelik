@@ -5,7 +5,7 @@
                 <div class="row mt-3">
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 col-6">
                     <h6 class="text-uppercase fw-bold mb-4">
-                        <i class="fas fa-gem me-3"></i>Юридическая информация
+                        <i class="fas fa-gem me-3"></i>Информация
                     </h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In fugiat quia perspiciatis obcaecati modi dolore corporis! Omnis, laboriosam voluptas. Unde facere omnis quo corrupti ullam cupiditate odit adipisci accusamus nulla.</p>
                     </div>
@@ -23,16 +23,13 @@
                     <p>
                         <a href="{{route('Contacts')}}" class="text-reset text-decoration-none">Обратная связь</a>
                     </p>
-                    <p>
-                        <a href="#!" class="text-reset text-decoration-none">Работа в компании</a>
-                    </p>
                     </div>
 
 
 
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 col-6">
                     <h6 class="text-uppercase fw-bold mb-4">Связаться с нами </h6>
-                    <p><i class="fas fa-home me-3"></i>Улица 50 лет Профсоюзов, 98</p>
+                    <p><i class="fas fa-home me-3"></i>Левый берег, Континент 3 этаж Роллердром</p>
                     <p>
                         <i class="fas fa-envelope me-3"></i>
                         begomsk@mail.ru

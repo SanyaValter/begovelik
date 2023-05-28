@@ -34,7 +34,7 @@
                     <div>
                         <a class="text-decoration-none text-dark me-4 fs-5" href="{{ route('main') }}">Главная</a>
                         <a class="text-decoration-none text-dark me-4 fs-5" href="{{ route('catalog') }}">Товары и услуги</a>
-                        <a class="text-decoration-none text-dark me-4 fs-5" href="#News">Новости и статьи</a>
+                        <a class="text-decoration-none text-dark me-4 fs-5" href="{{ route('news') }}">Новости и статьи</a>
                     </div>
                     <div class="dropdown me-3 text-decoration-none text-dark me-4 fs-5 ">
                             <a class="dropdown-toggle text-decoration-none text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
