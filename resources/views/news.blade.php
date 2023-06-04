@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-<h2 class="text-center fs-2 p-2"><b>Новости и статьи</b></h2>
 <Section>
+    <h2 class="text-center fs-2 p-3"><b>Новости и статьи</b></h2>
     @foreach($news as $item)
-<h2 class="pb-4 mb-4 fst-italic border-bottom text-center" id=""></h2>
 <div class="container">
+    <hr>
     <div class="p-3">
     <div class="row gx-5">
             <div class="col-md-6 mb-4">
@@ -16,8 +16,8 @@
         </div>
         <div class="col-md-6 mb-4">
             <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">{{$item->date}}</span>
-                <h4><strong>{{$item->name}}</strong></h4>
-                    <p class="text-muted">{{$item->text}}</p>
+                <h4><strong class="fs-4">{{$item->name}}</strong></h4>
+                    <p class="text-muted fs-4">{{$item->text}}</p>
             </div>
         </div>
     </div>

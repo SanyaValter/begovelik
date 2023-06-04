@@ -32,29 +32,24 @@
 
 
                     <div>
-                        <a class="text-decoration-none text-dark me-4 fs-5" href="{{ route('main') }}">Главная</a>
-                        <a class="text-decoration-none text-dark me-4 fs-5" href="{{ route('catalog') }}">Товары и услуги</a>
-                        <a class="text-decoration-none text-dark me-4 fs-5" href="{{ route('news') }}">Новости и статьи</a>
+                        <a class="text-decoration-none text-dark me-4 fs-5 fw-bold" href="{{ route('main') }}">Главная</a>
+                        <a class="text-decoration-none text-dark me-4 fs-5 fw-bold" href="{{ route('catalog') }}">Товары и услуги</a>
+                        <a class="text-decoration-none text-dark me-4 fs-5 fw-bold" href="{{ route('news') }}">Новости и статьи</a>
+                        <a class="text-decoration-none text-dark me-4 fs-5 fw-bold" href="{{ route('Contacts') }}">Пользователям</a>
                     </div>
-                    <div class="dropdown me-3 text-decoration-none text-dark me-4 fs-5 ">
+                    {{-- <div class="dropdown me-3 text-decoration-none text-dark me-4 fs-5 ">
                             <a class="dropdown-toggle text-decoration-none text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Дополнительно
+                              Пользователям
                             </a>
 
                             <ul class="dropdown-menu  ">
-                              <li><a class="dropdown-item" href="{{ route('Photos') }}">Фотографии</a></li>
                               <li><a class="dropdown-item" href="{{ route('Contacts') }}">Обратная связь</a></li>
                             </ul>
-                        </div>
+                        </div> --}}
                     <ul class="navbar-nav ms-auto ">
-
-                            <a href="{{route('cartPage')}}" class="me-4 text-decoration-none text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                            </svg></a>
-
-
+                            <a href="{{route('Photos')}}" class="text-center me-4 text-decoration-none text-dark"><button class="btn btn-link text-decoration-none text-dark fs-5 fw-bold">Фотогалерея</button></a>
                         <!-- Authentication Links -->
-                        @guest
+                        {{-- @guest
                             @if (Route::has('login'))
                                 <li class="nav-item me-2">
                                     <a class="btn btn-outline-dark col-12" href="{{ route('login') }}">{{ __('Войти') }}</a>
@@ -85,7 +80,8 @@
                                     </form>
                                 </div>
                             </li>
-                        @endguest
+                        @endguest --}}
+                        <a class="text-center" href="{{route('catalog')}}"><button class="btn btn-dark fs-5 " type="submit">Записаться на занятие</button></a>
                     </ul>
                 </div>
             </div>

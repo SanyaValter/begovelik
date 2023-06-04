@@ -25,7 +25,7 @@
             src="{{asset('img/5h.jpg')}}"
             class="w-100 shadow-1-strong rounded mb-4"
             alt="">
-            
+
         </div>
 
         <div class="col-lg-4 mb-4 mb-lg-0">
@@ -44,7 +44,7 @@
             class="w-100 shadow-1-strong rounded mb-4"
             alt="">
         </div>
-        
      </div>
+
 </div>
 @endsection

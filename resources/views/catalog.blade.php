@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="text-center py-3">
-        <a class=" text-decoration-none fs-2 aligh-items-center text-dark" href="{{ request()->fullUrlWithQuery(['category' => null]) }}"> Показать всё</a>
+        <a class=" text-decoration-none fw-bold fs-2 aligh-items-center text-dark" href="{{ request()->fullUrlWithQuery(['category' => null]) }}">Все услуги</a>
     </div>
     <section>
     <div class="container px-4" id="custom-cards">
@@ -80,11 +80,8 @@
                             <h4 class="mb-1 me-1" >{{$p->price}} ₽</h4>
                           </div>
                           <div class="d-flex flex-column mt-4">
-                            <a href="{{route('details',$p->id)}}" class="text-center"><button class="btn outline  btn-sm fs-5" type="button">Подробнее</button></a>
-                                <form action="{{ route('addToCart',$p->id) }}" method="post" class="text-center">
-                                @csrf
-                                <button class="btn btn-outline-dark btn-sm mt-2 text-center fs-5" type="submit">Добавить в корзину</button>
-                            </form>
+                            <a href="{{route('details',$p->id)}}" class="text-center"><button class="btn btn-link  btn-sm fs-5  text-decoration-none" type="button">Подробнее</button></a>
+                            <a class="text-center" href="{{route('order',$p->id)}}"><button class="btn btn-dark btn-sm mt-2 fs-5 " type="submit">Записаться на занятие</button></a>
                           </div>
                         </div>
                       </div>

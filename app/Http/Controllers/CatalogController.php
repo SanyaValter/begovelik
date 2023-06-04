@@ -28,5 +28,11 @@ class CatalogController extends Controller
         $product = Product::find($product_id);
         return view('product', compact('product'));
     }
+    public function order($product_id) {
+
+        $product = Product::find($product_id);
+
+        return view('order', compact('product'));
+    }
 }
 

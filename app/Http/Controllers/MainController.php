@@ -20,9 +20,6 @@ class MainController extends Controller
     public function Photos() {
         return view('Photos');
     }
-    public function Application() {
-        return view('Application');
-    }
     public function Treatment() {
         return view('Treatment');
     }

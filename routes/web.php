@@ -8,6 +8,7 @@ use App\Http\Controllers\CatalogController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\OrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,9 +21,6 @@ use App\Http\Controllers\NewsController;
 |
 */
 
-Route::get('/welcome', function () {
-    return view('welcome');
-});
 
 Auth::routes();
 
@@ -33,7 +31,6 @@ Route::get('/Photos',[MainController::class,'Photos'])->name('Photos');
 Route::get('/Contacts',[MainController::class,'Contacts'])->name('Contacts');
 Route::get('/search',[MainController::class,'search'])->name('search');
 Route::get('/aboutUs',[MainController::class,'aboutUs'])->name('aboutUs');
-Route::get('/Application',[MainController::class,'Application'])->name('Application');
 Route::get('/Treatment',[MainController::class,'Treatment'])->name('Treatment');
 
 Route::post('/cart/{id}',[CartController::class,'addToCart'])->name('addToCart');
@@ -48,5 +45,5 @@ Route::post('/send-message', [MailController::class, 'sendEmail'])->name('contac
 
 Route::get('/news', [NewsController::class,'news'])->name('news');
 
-
-
+Route::get('/order/{product_id}', [CatalogController::class, 'order'])->name('order');
+Route::post('/order', [OrderController::class, 'store'])->name('order.store');
