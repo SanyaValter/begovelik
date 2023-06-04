@@ -5,11 +5,12 @@ $(document).ready(function() {
         var childName = $("#childName").val().trim();
         var surnameСhild = $("#surnameСhild").val().trim();
         var nameOfParents = $("#nameOfParents").val().trim();
+        var email = $("#email").val().trim();
         var phone = $("#phone").val().trim();
         var year = $("#year").val().trim();
         var date = $("#date").val().trim();
 
-        if(!childName || !surnameСhild || !nameOfParents || !phone || !year || !date ) {
+        if(!childName || !surnameСhild || !nameOfParents || !phone || !year || !date || !email) {
             $('#orderSuccess').hide();
             $('#orderError').hide();
             return false;
@@ -22,6 +23,7 @@ $(document).ready(function() {
                 childName: $('#childName').val().trim(),
                 surnameСhild: $('#surnameСhild').val().trim(),
                 nameOfParents: $('#nameOfParents').val().trim(),
+                email: $('#email').val().trim(),
                 phone: $('#phone').val().trim(),
                 year: $('#year').val().trim(),
                 date: $('#date').val().trim(),
