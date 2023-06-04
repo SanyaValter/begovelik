@@ -17,6 +17,7 @@ class OrderController extends Controller
             'surnameСhild' => $request->surnameСhild,
             'nameOfParents' => $request->nameOfParents,
             'phone' => $request->phone,
+            'email' => $request->email,
             'year' => $request->year,
             'date' => $request->date,
         ];
@@ -24,7 +25,6 @@ class OrderController extends Controller
         Order::create($data);
 
         return redirect()->back();
-
     }
 }
 

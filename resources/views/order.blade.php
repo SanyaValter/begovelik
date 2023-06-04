@@ -37,13 +37,17 @@
                         <div class="form-group mt-3">
                             <label for="year" class="form-label fw-bolder">Сколько лет Вашему ребенку? (уточните до
                                 месяца, пожалуйста, например 2,7 мес)</label>
-                            <input type="year" class="year form-control" name="year" id="year"
+                            <input type="number" class="year form-control" name="year" id="year"
                                 placeholder="Ваш ответ" required>
                         </div>
                         <div class="form-group mt-3">
-                            <label for="phone" class="form-label fw-bolder">Телефон</label>
-                            <input type="phone" class="phone form-control" name="phone" id="phone" placeholder="+7"
+                            <label for="email" class="form-label fw-bolder">Е-мейл</label>
+                            <input type="email" class="phone form-control" name="email" id="email" placeholder="Е-мейл: "
                                 data-phone-pattern="" required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <label for="phone" class="form-label fw-bolder">Телефон</label>
+                            <input type="text" class="phone form-control" maxlength="12" name="phone" id="phone" placeholder="+7" required>
                         </div>
                         <div class="row">
                             <div class="form-group mt-3 col-lg-6">
@@ -110,7 +114,7 @@
                             </div>
                         </div>
                         <hr>
-                        <button id="orderService" class="col-lg-12 btn btn-dark" type="submit">Заказать звонок</button>
+                        <button id="orderService" class="col-lg-12 btn btn-dark" type="submit"> Заказать звонок</button>
                 </div>
                 </form>
             </div>
