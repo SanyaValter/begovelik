@@ -16,6 +16,7 @@ class OrderController extends Controller
             'childName' => $request->childName,
             'surnameСhild' => $request->surnameСhild,
             'nameOfParents' => $request->nameOfParents,
+            'email' => $request->email,
             'phone' => $request->phone,
             'year' => $request->year,
             'date' => $request->date,

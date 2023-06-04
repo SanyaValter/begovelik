@@ -18,8 +18,9 @@ return new class extends Migration
             $table->string('childName');
             $table->string('surnameСhild');
             $table->string('nameOfParents');
+            $table->string('email');
             $table->string('phone');
-            $table->strong('year');
+            $table->integer('year');
             $table->date('date');
             $table->timestamps();
         });

@@ -45,6 +45,10 @@
                             <input type="phone" class="phone form-control" name="phone" id="phone" placeholder="+7"
                                 data-phone-pattern="" required>
                         </div>
+                        <div class="form-group mt-3">
+                            <label for="email" class="form-label fw-bolder">email</label>
+                            <input type="email" class="email form-control" name="email" id="email" placeholder="email" required>
+                        </div>
                         <div class="row">
                             <div class="form-group mt-3 col-lg-6">
                                 <label for="date" class="form-label fw-bolder">Выберите дату записи</label>
