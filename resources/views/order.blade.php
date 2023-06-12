@@ -5,7 +5,7 @@
         <div class="container p-3">
             <div class="row">
                 <div class="service-description col-lg-7">
-                    <img class="img-fluid shadow rounded-4" width="70%" src="{{ asset('images/' . $product->img) }}" alt="">
+                    <img class="img-fluid shadow rounded-4" width="80%" src="{{ asset('images/' . $product->img) }}" alt="">
                     <p class="fw-bold text-start fs-5 p-3">{{ $product->name }}</b></p>
                 </div>
                 <div class="service-order col-lg-5">
@@ -30,7 +30,6 @@
                                 placeholder="Ваш ответ" required>
                         </div>
                         <div class="form-group mt-3">
-<<<<<<< HEAD
                             <label for="year" class="form-label fw-bolder">Сколько лет вашему ребенку?</label>
                             <input type="year" class="year form-control" name="year" id="year"
                                 placeholder="Ваш ответ" required>
@@ -44,21 +43,6 @@
                         <div class="form-group mt-3">
                             <label for="email" class="form-label fw-bolder">Email</label>
                             <input type="email" class="email form-control" name="email" id="email" placeholder="email" required>
-=======
-                            <label for="year" class="form-label fw-bolder">Сколько лет Вашему ребенку? (уточните до
-                                месяца, пожалуйста, например 2,7 мес)</label>
-                            <input type="number" class="year form-control" name="year" id="year"
-                                placeholder="Ваш ответ" required>
-                        </div>
-                        <div class="form-group mt-3">
-                            <label for="email" class="form-label fw-bolder">Е-мейл</label>
-                            <input type="email" class="phone form-control" name="email" id="email" placeholder="Е-мейл: "
-                                data-phone-pattern="" required>
->>>>>>> 86c8323531bbf312c52ab8c3ca49f634b0059f35
-                        </div>
-                        <div class="form-group mt-3">
-                            <label for="phone" class="form-label fw-bolder">Телефон</label>
-                            <input type="text" class="phone form-control" maxlength="12" name="phone" id="phone" placeholder="+7" required>
                         </div>
                         <div class="row">
                             <div class="form-group mt-3 col-lg-6">
@@ -81,14 +65,10 @@
                             </div>
                         </div>
                         <hr>
-<<<<<<< HEAD
                         <strong class="text-danger fs-5">Оплата производится на месте!</strong>
                         <div class="py-3">
                             <button id="orderService" class="col-lg-12 btn btn-dark" type="submit">Отправить</button>
                         </div>
-=======
-                        <button id="orderService" class="col-lg-12 btn btn-dark" type="submit"> Заказать звонок</button>
->>>>>>> 86c8323531bbf312c52ab8c3ca49f634b0059f35
                 </div>
                 </form>
             </div>
