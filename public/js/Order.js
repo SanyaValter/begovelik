@@ -9,7 +9,11 @@ $(document).ready(function () {
         var year = $("#year").val().trim();
         var date = $("#date").val().trim();
 
+<<<<<<< HEAD
         if (!childName || !nameOfParents || !phone || !year || !date || !email) {
+=======
+        if(!childName || !surnameСhild || !nameOfParents || !phone || !year || !date || !email) {
+>>>>>>> 86c8323531bbf312c52ab8c3ca49f634b0059f35
             $('#orderSuccess').hide();
             $('#orderError').hide();
             return false;

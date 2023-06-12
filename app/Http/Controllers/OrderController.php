@@ -19,6 +19,7 @@ class OrderController extends Controller
             'nameOfParents' => $request->nameOfParents,
             'email' => $request->email,
             'phone' => $request->phone,
+            'email' => $request->email,
             'year' => $request->year,
             'date' => $request->date,
         ];
@@ -28,7 +29,6 @@ class OrderController extends Controller
 
         Mail::to($email)->send (new OrderMail($data));
         return redirect()->back();
-
     }
 }
 
