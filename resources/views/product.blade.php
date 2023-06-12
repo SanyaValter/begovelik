@@ -24,7 +24,7 @@
                           overflow-hidden
                           d-block
                           " data-ripple-color="light">
-                <img src="{{asset('img/'.$product->img)}}"
+                <img src="{{asset('images/'.$product->img)}}"
                   class="w-100"  alt="Elegant shoes and shirt" />
                 <a href="#!">
                   <div class="hover-overlay">

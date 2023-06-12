@@ -23,6 +23,9 @@ class MainController extends Controller
     public function Treatment() {
         return view('Treatment');
     }
+    public function admin() {
+        return view('admin');
+    }
     public function search(Request $request) {
         $data = $request->validate([
             'search' => ['required', 'string', 'min:3']

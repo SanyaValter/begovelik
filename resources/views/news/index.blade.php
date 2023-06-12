@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+<link rel="stylesheet" href="{{asset('css\news.css')}}">
 @section('content')
 <Section>
     <h2 class="text-center fs-2 p-3"><b>Новости и статьи</b></h2>
@@ -10,8 +11,8 @@
     <div class="row gx-5">
             <div class="col-md-6 mb-4">
                 <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
-                    <img src="{{asset('img/'.$item->img)}}" class="img-fluid" style="max-width:75%;border-radius: 20px"><a href="#">
-                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div></a>
+                            <img src="{{asset('images/'.$item->img)}}" class="img-fluid" width="60%" style="border-radius: 15px;">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
             </div>
         </div>
         <div class="col-md-6 mb-4">
@@ -23,6 +24,7 @@
     </div>
 </div>
 </Section>
+<script src="{{asset('js/news.js')}}"></script>
 @endforeach
 
 @endsection

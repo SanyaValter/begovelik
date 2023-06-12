@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Mail;
 use App\Models\Order;
+use App\Mail\OrderMail;
 use Illuminate\Http\Request;
 
 class OrderController extends Controller
@@ -14,7 +16,6 @@ class OrderController extends Controller
 
         $data = [
             'childName' => $request->childName,
-            'surnameСhild' => $request->surnameСhild,
             'nameOfParents' => $request->nameOfParents,
             'email' => $request->email,
             'phone' => $request->phone,
@@ -23,7 +24,9 @@ class OrderController extends Controller
         ];
 
         Order::create($data);
+        $email = $data['email'];
 
+        Mail::to($email)->send (new OrderMail($data));
         return redirect()->back();
 
     }

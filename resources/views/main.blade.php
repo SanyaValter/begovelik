@@ -3,16 +3,6 @@
 @section('content')
 <link rel="stylesheet" href="{{asset('css\main.css')}}">
 
-
-
-   <!-- <div class="container py-3" style="max-width:900px;">
-           <video  class="rounded " autoplay muted loop id="Video" style="border: radius 20px;">
-                <source  src="{{asset('video\Магазин шапок. Обзор (720p).mp4')}}" type="video/mp4">
-            </video>
-    </div>  -->
-
-
-
     <section>
         <div class="text-center p-3">
         <h3 class="display-4 font-wight-normal text-center">Беговелик в Омске</h3>

@@ -7,7 +7,10 @@
                     <h6 class="text-uppercase fw-bold mb-4">
                         <i class="fas fa-gem me-3"></i>Информация
                     </h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In fugiat quia perspiciatis obcaecati modi dolore corporis! Omnis, laboriosam voluptas. Unde facere omnis quo corrupti ullam cupiditate odit adipisci accusamus nulla.</p>
+                    <p>СПОРТИВНЫЙ КЛУБ «БЕГОВЕЛиК» для детей от 2-х лет.
+                        С нами ваши дети полюбят спорт!
+                        Развиваем СИЛУ, ЛОВКОСТЬ, КООРДИНАЦИЮ!
+                        Научим трюкам безопасно!</p>
                     </div>
 
                     <div class="col-6 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">

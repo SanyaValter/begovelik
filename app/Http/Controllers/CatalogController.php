@@ -12,7 +12,7 @@ class CatalogController extends Controller
         if (!empty($r->all())) {
             $table =DB::table('products');
 
-            isset($r->category) ? $table->where('category',$r->category) : null;
+            isset($r->categories) ? $table->where('category_id',$r->categories) : null;
 
 
             $products = $table->get();
