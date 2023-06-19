@@ -27,6 +27,7 @@ $(document).ready(function () {
                 date: $('#date').val().trim(),
                 '_token': $('meta[name="csrf-token"]').attr('content'),
             },
+
             beforeSend: () => {
                 $("#orderService").prop("disabled", true);
                 $('#orderSuccess').hide();
@@ -63,11 +64,11 @@ document.getElementById('phone').addEventListener('input', function () {
         phoneError.textContent = '';
     } else {
         this.classList.add('error');
-        phoneError.textContent = 'Введите корректный номер телефона';
+        phoneError.textContent = 'Вводите корректный номер телефона';
     }
 });
 
 function validatePhoneNumber(phoneNumber) {
-    var phonePattern = /^[+]{1}[0-9]{1,3}[0-9]{9,10}$/;
+    var phonePattern = /^\+?[78]\d{10}$/;
     return phonePattern.test(phoneNumber);
-}
+  }

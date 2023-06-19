@@ -46,10 +46,18 @@
                             <li class="nav-item">
                                 <a class="nav-link text-dark " href="{{ route('Photos') }}">Фотогалерея</a>
                             </li>
+                            @auth
+                            <li class="nav-item">
+                                <a class="nav-link text-dark " href="{{ route('admin') }}">Админ-панель</a>
+                            </li>
+                            @endauth
                         </ul>
                         <a class="text-center" href="{{ route('catalog') }}">
                             <button class="btn btn-dark">Записаться на занятие</button>
                         </a>
+                        @auth
+                            <a class="btn btn-danger m-3" href="{{ route('logout') }}">Выйти</a>
+                        @endauth
                     </div>
                 </div>
             </nav>
