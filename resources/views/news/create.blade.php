@@ -28,7 +28,7 @@
             </div>
 
             <div class="mb-3 fw-bold">
-                <label for="password" class="form-label"><b class="text-danger">Обязвательно</b> введите пароль:</label>
+                <label for="password" class="form-label"><b class="text-danger">Обязательно</b> введите пароль:</label>
                 <input type="password" name="password" id="password" class="form-control" required>
             </div>
 
