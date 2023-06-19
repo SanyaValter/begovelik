@@ -21,28 +21,28 @@
                         <div class="form-group mt-4">
                             <label for="childName" class="form-label fw-bolder">Имя ребенка:</label>
                             <input type="text" name="childName" class="childName form-control" id="childName"
-                                placeholder="Ваш ответ" required>
+                                placeholder="Введите имя ребенка" required>
                         </div>
                         <div class="form-group mt-4">
                             <label for="nameOfParents" class="form-label fw-bolder">Имя и отчество родителя (мамы или папы,
                                 кому звонить)</label>
                             <input type="text" name="nameOfParents" class="name form-control" id="nameOfParents"
-                                placeholder="Ваш ответ" required>
+                                placeholder="Введите ФИО" required>
                         </div>
                         <div class="form-group mt-3">
                             <label for="year" class="form-label fw-bolder">Сколько лет вашему ребенку?</label>
-                            <input type="year" class="year form-control" name="year" id="year"
-                                placeholder="Ваш ответ" required>
+                            <input type="number" class="year form-control" name="year" id="year"
+                                placeholder="Введите возраст ребенка" required>
                         </div>
                         <div class="form-group mt-3">
                             <label for="phone" class="form-label fw-bolder">Телефон</label>
-                            <input type="tel" class="phone form-control" name="phone" id="phone" placeholder="+7" required>
+                            <input type="text" class="phone form-control" name="phone" id="phone" maxlength="11" placeholder="Введите номер телефона" required>
                             <span id="phone-error" class="error-message"></span>
                         </div>
 
                         <div class="form-group mt-3">
                             <label for="email" class="form-label fw-bolder">Email</label>
-                            <input type="email" class="email form-control" name="email" id="email" placeholder="email" required>
+                            <input type="email" class="email form-control" name="email" id="email" placeholder="Введите электронную почту" required>
                         </div>
                         <div class="row">
                             <div class="form-group mt-3 col-lg-6">
