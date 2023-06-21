@@ -19,7 +19,6 @@ return new class extends Migration
             $table->text('text');
             $table->string('img')->nullable();
             $table->date('date');
-            $table->string('password');
             $table->timestamps();
         });
     }

@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class NewsController extends Controller
 {
+    public function index()
+    {
+        $news = News::all();
+        return view('news.index', compact('news'));
+    }
     public function create()
     {
         return view('news.create');
@@ -21,12 +26,6 @@ class NewsController extends Controller
             'date' => 'required|date',
         ]);
 
-        $password = 'admin11'; // Пароль
-
-        if ($request->password !== $password) {
-            return redirect()->back()->with('error', 'Неверный пароль');
-        }
-
         $imageName = null;
         if ($request->hasFile('img')) {
             $image = $request->file('img');
@@ -39,15 +38,13 @@ class NewsController extends Controller
             'text' => $request->input('text'),
             'img' => $imageName,
             'date' => $request->input('date'),
-            'password' => $request->input('password'),
         ]);
 
         return redirect()->route('news.index')->with('success', 'Новость успешно добавлена');
     }
-
-    public function index()
+    public function delete($id)
     {
-        $news = News::all();
-        return view('news.index', compact('news'));
+        $news = News::findOrFail($id)->delete();
+        return back();
     }
 }

@@ -36,11 +36,6 @@
                 <input type="number" name="price" id="price" class="form-control" required>
             </div>
 
-            <div class="mb-3 fw-bold">
-                <label for="password" class="form-label"><b class="text-danger">Обязательно</b> введите пароль:</label>
-                <input type="password" name="password" id="password" class="form-control" required>
-            </div>
-
             @if(session('error'))
             <div class="alert alert-danger">
                 {{ session('error') }}

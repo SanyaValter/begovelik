@@ -15,6 +15,7 @@
                     <th>Описание</th>
                     <th>Категория</th>
                     <th>Цена</th>
+                    <th>Действия</th>
                 </tr>
             </thead>
             <tbody>
@@ -24,6 +25,7 @@
                     <td>{{ $product->text }}</td>
                     <td>{{ $product->category->name }}</td>
                     <td>{{ $product->price }}</td>
+                    <td><a href="{{ route('products.delete',$product->id) }}" class="m-3 btn btn-danger">Удалить</a></td>
                 </tr>
                 @endforeach
             </tbody>
