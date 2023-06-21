@@ -27,11 +27,11 @@ use App\Http\Controllers\ProductController;
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/',[MainController::class,'main'])->name('main');
-Route::get('/Photos',[MainController::class,'Photos'])->name('Photos');
-Route::get('/Contacts',[MainController::class,'Contacts'])->name('Contacts');
+Route::get('/photos',[MainController::class,'Photos'])->name('Photos');
+Route::get('/contacts',[MainController::class,'Contacts'])->name('Contacts');
 Route::get('/search',[MainController::class,'search'])->name('search');
 Route::get('/aboutUs',[MainController::class,'aboutUs'])->name('aboutUs');
-Route::get('/Treatment',[MainController::class,'Treatment'])->name('Treatment');
+Route::get('/treatment',[MainController::class,'Treatment'])->name('Treatment');
 Route::get('/admin',[MainController::class,'admin'])->name('admin');
 
 Route::get('/catalog',[CatalogController::class,'catalog'])->name('catalog');
@@ -46,21 +46,28 @@ Route::post('/order', [OrderController::class, 'store'])->name('order.store');
 
 
 Route::middleware('auth')->group(function(){
-    Route::get('/categories/create', [CategoryController::class, 'create'])->name('categories.create');
-    Route::post('/categories', [CategoryController::class, 'store'])->name('categories.store');
-    Route::get('/categories', [CategoryController::class, 'index'])->name('categories.index');
-
-    Route::get('/products/create', [ProductController::class, 'create'])->name('products.create');
-    Route::post('/products', [ProductController::class, 'store'])->name('products.store');
-
-    Route::get('/news/create', [NewsController::class, 'create'])->name('news.create');
-    Route::post('/news', [NewsController::class, 'store'])->name('news.store');
+    Route::prefix('categories')->group(function(){
+        Route::get('/create', [CategoryController::class, 'create'])->name('categories.create');
+        Route::post('/store', [CategoryController::class, 'store'])->name('categories.store');
+        Route::get('/', [CategoryController::class, 'index'])->name('categories.index');
+        Route::get('/delete/{id}', [CategoryController::class, 'delete'])->name('categories.delete');
+    });
+    Route::prefix('products')->group(function(){
+        Route::get('/create', [ProductController::class, 'create'])->name('products.create');
+        Route::post('/store', [ProductController::class, 'store'])->name('products.store');
+        Route::get('/', [ProductController::class, 'index'])->name('products.index');
+        Route::get('/delete/{id}', [ProductController::class, 'delete'])->name('products.delete');
+    });
+    Route::prefix('news')->group(function(){
+        Route::get('/', [ProductController::class, 'index'])->name('news.index');
+        Route::get('/create', [NewsController::class, 'create'])->name('news.create');
+        Route::post('/store', [NewsController::class, 'store'])->name('news.store');
+        Route::get('/delete/{id}', [NewsController::class, 'delete'])->name('news.delete');
+    });
     Route::get('/admin', [AdminController::class, 'admin'])->name('admin');
     Route::get('/logout', [AdminController::class, 'logout'])->name('logout');
 });
 Route::get('/news', [NewsController::class, 'index'])->name('news.index');
 
-Route::get('/products', [ProductController::class, 'index'])->name('products.index');
-Route::get('/products/{product}', [ProductController::class, 'show'])->name('products.show');
 Route::get('/auth', [AdminController::class, 'authForm'])->name('authForm');
 Route::post('/auth', [AdminController::class, 'auth'])->name('auth');

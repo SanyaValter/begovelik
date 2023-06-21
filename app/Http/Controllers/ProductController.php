@@ -22,17 +22,11 @@ class ProductController extends Controller
 
     public function store(Request $request)
     {
-        $password = 'admin11'; // Пароль
-
-        if ($request->password !== $password) {
-            return redirect()->back()->with('error', 'Неверный пароль');
-        }
         $product = new Product();
         $product->name = $request->input('name');
         $product->text = $request->input('text');
         $product->price = $request->input('price');
         $product->category_id = $request->input('category_id');
-        $product->password = $request->input('password');
 
         if ($request->hasFile('img')) {
             $image = $request->file('img');
@@ -44,5 +38,10 @@ class ProductController extends Controller
         $product->save();
 
         return redirect()->route('products.index')->with('success', 'Успешно!');
+    }
+    public function delete($id)
+    {
+        $product = Product::findOrFail($id)->delete();
+        return back();
     }
 }

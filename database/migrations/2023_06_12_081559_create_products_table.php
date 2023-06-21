@@ -15,9 +15,7 @@ class CreateProductsTable extends Migration
             $table->string('img')->nullable();
             $table->unsignedBigInteger('category_id');
             $table->decimal('price', 8, 2);
-            $table->string('password');
             $table->timestamps();
-
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
         });
     }

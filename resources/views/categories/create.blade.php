@@ -10,10 +10,6 @@
                 <label for="name">Имя категории:</label>
                 <input type="text" name="name" id="name" class="form-control">
             </div>
-            <div class="mb-3 fw-bold">
-                <label for="password" class="form-label"><b class="text-danger">Обязательно</b> введите пароль:</label>
-                <input type="password" name="password" id="password" class="form-control" required>
-            </div>
             <div class="py-3">
                 <button type="submit" class="btn btn-dark">Добавить</button>
             </div>
