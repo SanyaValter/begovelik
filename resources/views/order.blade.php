@@ -30,7 +30,7 @@
                         </div>
                         <div class="form-group mt-3">
                             <label for="year" class="form-label fw-bolder">Сколько лет вашему ребенку?<span class="text-danger"> *</span></label>
-                            <input type="number" class="year form-control" name="year" id="year" min="0"
+                            <input type="number" class="year form-control" name="year" id="year" min="0" max="5"
                                 placeholder="Введите возраст ребенка" required>
                         </div>
                         <div class="form-group mt-3">
@@ -45,7 +45,7 @@
                         </div>
                         <div class="row">
                             <div class="form-group mt-3 col-lg-6">
-                              <label for="date" class="form-label fw-bolder">Выберите дату тренировки <br>(Предварительно ознакомьтесь с расписанием занятий)<span class="text-danger"> *</span></label>
+                              <label for="date" class="form-label fw-bolder">Выберите дату тренировки <br>(<a class="text-decoration-none" href="{{route('main')}}">Предварительно ознакомьтесь с расписанием занятий</a>)<span class="text-danger"> *</span></label>
                               <input type="date" class="date form-control" name="date" id="date" required>
                             </div>
                           </div>
