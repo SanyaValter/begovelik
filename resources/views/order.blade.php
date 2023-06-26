@@ -5,8 +5,8 @@
         <div class="container p-3">
             <div class="row">
                 <div class="service-description col-lg-7">
+                     <p class="fw-bold text-start fs-5 p-3">{{ $product->name }}</b></p>
                     <img class="img-fluid shadow rounded-4" width="80%" src="{{ asset('images/' . $product->img) }}" alt="">
-                    <p class="fw-bold text-start fs-5 p-3">{{ $product->name }}</b></p>
                 </div>
                 <div class="service-order col-lg-5">
                     <form action="{{route('order.store')}}" method="post" id="order">
@@ -24,14 +24,13 @@
                                 placeholder="Введите имя ребенка" required>
                         </div>
                         <div class="form-group mt-4">
-                            <label for="nameOfParents" class="form-label fw-bolder">Имя и отчество родителя (мамы или папы,
-                                кому звонить)</label>
+                            <label for="nameOfParents" class="form-label fw-bolder">Имя и отчество родителя или представителя ребёнка  (укажите для обращения к Вам при звонке)</label>
                             <input type="text" name="nameOfParents" class="name form-control" id="nameOfParents"
                                 placeholder="Введите ФИО" required>
                         </div>
                         <div class="form-group mt-3">
                             <label for="year" class="form-label fw-bolder">Сколько лет вашему ребенку?</label>
-                            <input type="number" class="year form-control" name="year" id="year"
+                            <input type="number" class="year form-control" name="year" id="year" min="0"
                                 placeholder="Введите возраст ребенка" required>
                         </div>
                         <div class="form-group mt-3">
@@ -46,7 +45,7 @@
                         </div>
                         <div class="row">
                             <div class="form-group mt-3 col-lg-6">
-                              <label for="date" class="form-label fw-bolder">Выберите дату записи</label>
+                              <label for="date" class="form-label fw-bolder">Выберите дату тренировки <br>(Предварительно ознакомьтесь с расписанием занятий)</label>
                               <input type="date" class="date form-control" name="date" id="date" required>
                             </div>
                           </div>

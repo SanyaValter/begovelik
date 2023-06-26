@@ -35,7 +35,7 @@
                                 <a class="nav-link text-dark " href="{{ route('main') }}">Главная</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark " href="{{ route('catalog') }}">Товары и услуги</a>
+                                <a class="nav-link text-dark " href="{{ route('catalog') }}">Услуги</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-dark " href="{{ route('news.index') }}">Новости и статьи</a>
