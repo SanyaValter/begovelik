@@ -19,33 +19,33 @@
                             Похоже что-то пошло не так. Поробуйте позже.
                         </div>
                         <div class="form-group mt-4">
-                            <label for="childName" class="form-label fw-bolder">Имя ребенка:</label>
+                            <label for="childName" class="form-label fw-bolder">Имя ребенка <span class="text-danger"> *</span></label>
                             <input type="text" name="childName" class="childName form-control" id="childName"
                                 placeholder="Введите имя ребенка" required>
                         </div>
                         <div class="form-group mt-4">
-                            <label for="nameOfParents" class="form-label fw-bolder">Имя и отчество родителя или представителя ребёнка  (укажите для обращения к Вам при звонке)</label>
+                            <label for="nameOfParents" class="form-label fw-bolder">Имя и отчество родителя или представителя ребёнка  (укажите для обращения к Вам при звонке)<span class="text-danger"> *</span></label>
                             <input type="text" name="nameOfParents" class="name form-control" id="nameOfParents"
                                 placeholder="Введите ФИО" required>
                         </div>
                         <div class="form-group mt-3">
-                            <label for="year" class="form-label fw-bolder">Сколько лет вашему ребенку?</label>
+                            <label for="year" class="form-label fw-bolder">Сколько лет вашему ребенку?<span class="text-danger"> *</span></label>
                             <input type="number" class="year form-control" name="year" id="year" min="0"
                                 placeholder="Введите возраст ребенка" required>
                         </div>
                         <div class="form-group mt-3">
-                            <label for="phone" class="form-label fw-bolder">Телефон</label>
+                            <label for="phone" class="form-label fw-bolder">Телефон<span class="text-danger"> *</span></label>
                             <input type="text" class="phone form-control" name="phone" id="phone" maxlength="11" placeholder="Введите номер телефона" required>
                             <span id="phone-error" class="error-message"></span>
                         </div>
 
                         <div class="form-group mt-3">
-                            <label for="email" class="form-label fw-bolder">Email</label>
+                            <label for="email" class="form-label fw-bolder">Email<span class="text-danger"> *</span></label>
                             <input type="email" class="email form-control" name="email" id="email" placeholder="Введите электронную почту" required>
                         </div>
                         <div class="row">
                             <div class="form-group mt-3 col-lg-6">
-                              <label for="date" class="form-label fw-bolder">Выберите дату тренировки <br>(Предварительно ознакомьтесь с расписанием занятий)</label>
+                              <label for="date" class="form-label fw-bolder">Выберите дату тренировки <br>(Предварительно ознакомьтесь с расписанием занятий)<span class="text-danger"> *</span></label>
                               <input type="date" class="date form-control" name="date" id="date" required>
                             </div>
                           </div>

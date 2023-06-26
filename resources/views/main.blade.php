@@ -31,15 +31,14 @@
                   <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
                     <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Расписание тренировок</h1>
                         <li class="fs-4 text-start">
-                           <b>Вторник</b> 18:00 новички и малыши.
+                           <b>Вторник</b> 18:00 новички и малыши (2-3 года).
                         </li>
                         <li class="fs-4 text-start">
-                           <b>Четверг</b> 19:00 старшие дети + велосипед.
+                           <b>Четверг</b> 19:00 старшие дети (4-5 лет) + велосипед.
                         </li>
                         <li class="fs-4 text-start">
                           <b>Суббота</b>
-                            10:00 велосипед,
-                            11:00 беговел.
+                            10:00 велосипед, 11:00 беговел.
                         </li>
                         <p class="text-muted fs-4 text-start">Занятия проходят в Континенте 3 этаж, Роллердром.</p>
                      <a href="{{route('catalog')}}"><button type="submit" class=" text-center btn btn-dark btn-lg px-4 me-md-2 fw-bold">Записаться</button></a>
